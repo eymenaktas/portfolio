@@ -438,6 +438,9 @@ footer a{
   transition:color .3s,border-color .3s,background .3s;
 }
 footer a:hover{color:var(--fg);border-color:var(--line);background:var(--surface)}
+/* Footer'daki bağlantı grubu. Dar ekranda alt satıra sarıyor; footer
+   zaten flex-wrap olduğu için tek satırda zorlamıyor. */
+.foot-links{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
 
 /* ═══════════════ TEMA GEÇİŞİ (dairesel açılma) ═══════════════ */
 /* Varsayılan çapraz geçişi kapat; animasyonu JS'teki clip-path dairesi yapıyor.
@@ -638,9 +641,18 @@ footer a:hover{color:var(--fg);border-color:var(--line);background:var(--surface
 </section>
 
 <!-- ═════════ FOOTER ═════════ -->
-<footer class="rv">
+<!-- Footer bilerek `rv` DEĞİL. `.rv` opacity:0 başlayıp JS görünüm
+     alanına girince `.in` ekleyerek açıyor; gözlemci tetiklenmezse
+     (çapa ile en alta atlama, sekme geri yüklemesi, JS hatası) içerik
+     kalıcı olarak görünmez kalıyor. Gizlilik bağlantısının görünmesi
+     kaydırma şansına bırakılamaz, o yüzden bu blok her zaman açık. -->
+<footer>
   <span>eymen.akts.tr &nbsp;•&nbsp; <span id="year">2026</span></span>
-  <a href="#">Yukarı ↑</a>
+  <nav class="foot-links">
+    <a href="gizlilik.html">Gizlilik</a>
+    <a href="https://akts.tr" target="_blank" rel="noreferrer noopener">akts.tr</a>
+    <a href="#">Yukarı ↑</a>
+  </nav>
 </footer>
 
 </div>
