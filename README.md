@@ -18,7 +18,19 @@ teknoloji ikonları ve bölüm bazlı içerik.
 
 ## Kaynak kod
 
-Bu depoda kaynak kod bulunmuyor.
+Tek `index.html` — CSS ve JS gömülü, build adımı yok. Görseller
+`assets/` altında.
+
+```bash
+python3 -m http.server 4173     # sonra http://localhost:4173
+```
+
+**Yayın:** sunucuda `/var/www/portfolio/`, nginx doğrudan diskten
+servis ediyor.
+
+```bash
+scp index.html akts:/var/www/portfolio/index.html
+```
 
 ## İletişim
 

@@ -1,5 +1,13 @@
-# Bu depoda kaynak kod tutulmuyor — yalnızca README yayınlanıyor.
-# Aşağıdaki kural her şeyi yok sayar, sadece izin verilenler takip edilir.
-/*
-!.gitignore
-!README.md
+# 2026-08-27'ye kadar bu dosya `/*` diyordu: depo yalnızca README
+# yayınlıyordu, kaynak kod bilerek dışarıdaydı. Eymen kaynağı
+# yayınlamaya karar verdi, kural normale döndü.
+
+.DS_Store
+*.log
+.vscode/
+.idea/
+node_modules/
+
+# düzenleme öncesi elle alınan yedekler
+index.onceki-*.html
+*.yedek-*
