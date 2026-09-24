@@ -1,6 +1,6 @@
 # Durum — websitesi (eymen.akts.tr)
 
-Güncelleme: 2026-09-24 | Son araç: claude
+Güncelleme: 2026-09-25 | Son araç: claude
 
 ## Hedef
 
@@ -11,9 +11,11 @@ Kişisel portfolyo. Tek `index.html`; projeler `PROJECTS` dizisinde. Proje yayı
 
 - [x] StudyTrack, Ezan Vaktim, Maske Pack, BlankReel kartları; OyunHub 40 oyun (f94a1e3). Canlıda.
 
+- [x] Aktaş Fit kartı, Maske Packs → maskepacks.com, trCore açık kaynak (2026-09-25). Canlıda.
+
 ## Sıradaki adım
 
-maskepack.tr açılınca Maske Pack kartının `url`'ini `https://maskepack.tr/` yap.
+Gizli depolar açılırsa kartlara `repo:` ekle (maske-pack, ezan-vaktim, studytrack, aktas-fit, blankreel/blankreel).
 
 ## Bilinen tuzaklar
 
