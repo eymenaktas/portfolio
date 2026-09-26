@@ -497,6 +497,9 @@ body{counter-reset:sec}
 .show-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 .show-tags span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--surface-hi);color:var(--muted)}
 @media(max-width:720px){.showcase{grid-template-columns:1fr}.stats{gap:24px}.stats b{font-size:28px}}
+.aka{font-size:15px;color:var(--dim);margin-top:6px;line-height:1.3}.aka+p{margin-top:2px !important}.aka b{color:var(--muted);font-weight:600}
+.sub-label{font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin:40px 0 16px}
+.roles-old{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
 </style>
 </head>
 <body>
@@ -515,6 +518,7 @@ body{counter-reset:sec}
     </div>
     <div class="id-text">
       <h1>Eymen</h1>
+      <p class="aka">aka <b>MaskeDev</b></p>
       <p><span>Akts Studio</span> <span>Minecraft Developer</span> <span>ML &amp; Deep Learning</span></p>
     </div>
     <div class="spacer"></div>
@@ -618,6 +622,54 @@ body{counter-reset:sec}
         <span class="tag">Topluluk</span>
       </div>
     </article>
+
+    <!-- Maske Packs -->
+    <article class="role rv" style="--accent:#adc8ff">
+      <div class="role-head">
+        <div class="role-logo">
+          <img src="assets/maske.png" alt="Maske Packs logosu" style="image-rendering:pixelated" />
+        </div>
+        <span class="badge live"><span class="dot"></span>Aktif</span>
+      </div>
+      <div class="role-name">Maske Packs</div>
+      <div class="role-title">Kurucu · MaskeDev</div>
+      <p class="role-desc">
+        Crystal PvP kaynak paketimi herkesin kendi rengine göre kurabileceği bir
+        araca çevirdim. Tarayıcıda paket üreten kurucu, 1.20'den 26.3'e her sürüm
+        için ayrı paket ve kendi yazdığım Minestom tabanlı test sunucusu.
+      </p>
+      <div class="role-tags">
+        <span class="tag">Kaynak Paketi</span>
+        <span class="tag">Minestom</span>
+        <span class="tag">maskepacks.com</span>
+      </div>
+    </article>
+
+    <!-- BlankReel -->
+    <article class="role rv" style="--accent:#e4e4e7">
+      <div class="role-head">
+        <div class="role-logo">
+          <img src="assets/blankreel.svg" alt="BlankReel logosu" />
+        </div>
+        <span class="badge live"><span class="dot"></span>Aktif</span>
+      </div>
+      <div class="role-name">BlankReel</div>
+      <div class="role-title">Developer</div>
+      <p class="role-desc">
+        Kodla kısa video üreten bir SaaS: TikTok, Shorts ve Reels için dikey
+        videoyu API'den tek istekle render ediyor. Next.js, Remotion ve
+        Supabase üzerinde çalışıyorum.
+      </p>
+      <div class="role-tags">
+        <span class="tag">SaaS</span>
+        <span class="tag">Remotion</span>
+        <span class="tag">API</span>
+      </div>
+    </article>
+
+  </div>
+  <p class="sub-label rv">Eski roller</p>
+  <div class="roles roles-old">
 
     <!-- TrPrac -->
     <article class="role rv" style="--accent:var(--trprac)">
