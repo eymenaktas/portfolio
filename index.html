@@ -469,6 +469,34 @@ footer a:hover{color:var(--fg);border-color:var(--line);background:var(--surface
   *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
   .rv{opacity:1;transform:none}
 }
+
+/* ═══════════════ BÜYÜK KİMLİK + ÖNE ÇIKANLAR ═══════════════ */
+.id-text h1{font-size:clamp(40px,7vw,68px);font-weight:700;letter-spacing:-.05em;line-height:1}
+.id-text p{margin-top:8px}
+body{counter-reset:sec}
+.label::before{counter-increment:sec;content:counter(sec,decimal-leading-zero);margin-right:12px;color:var(--fg);font-variant-numeric:tabular-nums}
+.stats{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:40px;margin-top:40px}
+.stats b{display:block;font-size:34px;font-weight:700;letter-spacing:-.04em;line-height:1}
+.stats span{display:block;margin-top:6px;font-size:13px;color:var(--dim)}
+.showcase{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.show{display:block;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--surface);
+  transition:transform .5s var(--spring),border-color .3s}
+.show:hover{transform:translateY(-4px);border-color:var(--line-hi)}
+.show-art{position:relative;height:300px;overflow:hidden}
+.device{position:absolute;left:50%;top:40px;width:196px;transform:translateX(-50%);border-radius:32px;padding:3px;
+  background:linear-gradient(90deg,#8d9591,#eef2ef 6%,#b9c1bd 12%,#6f7773 50%,#b9c1bd 88%,#eef2ef 94%,#8d9591);
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.6);transition:transform .6s var(--spring)}
+.show:hover .device{transform:translateX(-50%) translateY(-10px)}
+.device div{position:relative;border-radius:29px;background:#050807;padding:6px}
+.device img{width:100%;border-radius:23px}
+.device i{position:absolute;left:50%;top:14px;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:#000;box-shadow:0 0 0 2px #0d1110}
+.show-body{display:flex;gap:16px;padding:22px 24px 24px;border-top:1px solid var(--line)}
+.show-body img.ic{width:48px;height:48px;border-radius:12px;flex:none}
+.show-body h3{font-size:19px;font-weight:600;letter-spacing:-.02em}
+.show-body p{color:var(--muted);font-size:14.5px;line-height:1.55;margin-top:4px}
+.show-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.show-tags span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--surface-hi);color:var(--muted)}
+@media(max-width:720px){.showcase{grid-template-columns:1fr}.stats{gap:24px}.stats b{font-size:28px}}
 </style>
 </head>
 <body>
@@ -522,9 +550,47 @@ footer a:hover{color:var(--fg);border-color:var(--line);background:var(--surface
       eymen@akts.tr
     </a>
   </div>
+  <dl class="stats rv">
+    <div><b>10+</b><span>yayında proje</span></div>
+    <div><b>2</b><span>Android uygulaması</span></div>
+    <div><b>1</b><span>kendi sunucum</span></div>
+  </dl>
 </header>
 
 <hr class="rv" />
+
+<!-- ═════════ ÖNE ÇIKANLAR ═════════ -->
+<section>
+  <p class="label rv">Öne çıkan</p>
+  <div class="showcase">
+    <a class="show rv" href="https://ezan.akts.tr" target="_blank" rel="noopener">
+      <div class="show-art" style="background:radial-gradient(120% 90% at 50% 0%,#15523f,#0b3b2e 55%,#062419)">
+        <div class="device"><div><img src="https://akts.tr/shots/mehtapp.jpg" alt="MehtApp ekranı" loading="lazy" /><i></i></div></div>
+      </div>
+      <div class="show-body">
+        <img class="ic" src="https://ezan.akts.tr/img/icon-180.png" alt="" />
+        <div>
+          <h3>MehtApp</h3>
+          <p>Diyanet takvimiyle aynı vakitler, kilit ekranında ezan uyarısı, seri ve kaza takibi. Kotlin + Jetpack Compose.</p>
+          <div class="show-tags"><span>Android</span><span>Galaxy Watch</span><span>Widget</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="show rv" href="https://studytrack.tr" target="_blank" rel="noopener">
+      <div class="show-art" style="background:radial-gradient(120% 90% at 50% 0%,#e3efe7,#cde0d4 60%,#a9ccb7)">
+        <div class="device"><div><img src="https://akts.tr/shots/studytrack.jpg" alt="StudyTrack ekranı" loading="lazy" /><i></i></div></div>
+      </div>
+      <div class="show-body">
+        <img class="ic" src="assets/studytrack.png?v=2" alt="" />
+        <div>
+          <h3>StudyTrack</h3>
+          <p>Pomodoro, günlük hedef, seri ve rozetler. Expo + React Native, widget'lar ve saat uygulaması native Kotlin.</p>
+          <div class="show-tags"><span>Android</span><span>Wear OS</span><span>Web</span></div>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
 
 <!-- ═════════ ROLLER ═════════ -->
 <section>
